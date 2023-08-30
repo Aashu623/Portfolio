@@ -68,9 +68,6 @@ img{
     box-shadow: var(--black);
     background: white;
     position: absolute;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     animation: rotaterev 5s linear infinite;
   }
   .secCircle>img{
