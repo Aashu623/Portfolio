@@ -1,0 +1,120 @@
+
+.c-container{
+    display: flex;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    align-items: center;
+    justify-content: center;
+}
+.left{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    flex: 1;
+}
+.span{
+    display: flex;
+    margin-top: 4rem;
+    flex-direction: column;
+}
+.span>:nth-child(1){
+    color: var(--black);
+    font-weight: bold;
+    font-size: 3rem;
+}
+.span>:nth-child(2){
+    color: var(--gray);
+    font-weight: bold;
+    font-size: 3rem;
+}
+
+.right{
+    display: flex;
+    flex: 1;
+    position: relative;
+    justify-content: center;
+}
+.right>form{
+    display: flex;
+    flex-direction: column;
+    gap: 1.1rem;
+    align-items: center;
+}
+.right form input,textarea{
+    width: 20rem;
+    height: 2rem;
+    padding:  0 1.1em;
+    text-align: center;
+    outline: none;
+    border: 2px solid var(--orange);
+    border-radius: 8px;
+    font-size: 16px;
+}
+.right form textarea{
+    height: 4rem !important;
+    padding: 10px;
+}
+.disable{
+    background-color: var(--gray);
+}
+.error{
+    text-align: center;
+    font-size: 2rem;
+    color: rgb(232, 96, 96);
+}
+.loader{
+    margin-left: 35rem;
+}
+@media screen and (max-width:1080px) {
+    .contact{
+        .c-container{
+            align-items: flex-start;
+        }
+    }
+    .span>:nth-child(1){
+        font-size: 2.5rem;
+    }
+    .span>:nth-child(2){
+        font-size: 2.5rem;
+    }
+}
+@media screen and (max-width:770px) {
+    .c-container{
+        flex-direction: column;
+    }
+}
+@media screen and (max-width: 480px) {
+    .contact {
+      flex-direction: column;
+      margin-top: 0;
+      padding: 1.1rem;
+      height: auto;
+      gap: 0;
+    }
+    .c-container{
+        flex-direction: column;
+        gap: 2rem;
+    }
+    .span>:nth-child(1){
+        font-size: 2rem;
+    }
+    .span>:nth-child(2){
+        font-size: 2rem;
+    }
+    .right img{
+        display: none;
+    }
+    .right form input,textarea{
+        width: 10rem;
+    }
+    .error{
+        text-align: center;
+        margin-top: 1.5rem;
+        font-size: 1.5rem;
+    }
+    .loader{
+        margin: 0;
+    }
+}
