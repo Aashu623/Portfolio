@@ -25,6 +25,6 @@ This will launch a local development server that hosts your React.js portfolio w
 Contact:
 Feel free to reach out to me at aashukushwah53678@gmail.com for any inquiries, or suggestions.
 
-Thank you for visiting my portfolio repository and exploring my journey in [Your Field/Area of Expertise]!
+Thank you for visiting my portfolio repository!
 
-- Aashish Kushwah
+-- Aashish Kushwah
