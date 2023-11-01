@@ -63,6 +63,7 @@ img{
   background: linear-gradient(180deg,#f3e9c7 26.71%,#e8b279 99.36%);
   animation: rotate 5s linear infinite;
   .secCircle{
+    background-color: white;
     width: 4.5rem;
     height: 4.5rem;
     border-radius: 100%;
