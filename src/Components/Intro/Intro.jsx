@@ -1,7 +1,7 @@
 import React ,{useContext,useEffect,useRef}from 'react';
 import './intro.css';
 import { GitHub, Instagram, Linkedin } from 'react-feather';
-import boy from '../../img/boy.png';
+import boy from '../../img/myPic.jpg';
 import ScrollingContext from '../ScrollingContext';
 import Aos from 'aos';
 import 'aos/dist/aos.css';

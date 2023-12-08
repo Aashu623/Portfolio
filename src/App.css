@@ -16,7 +16,7 @@
   overflow: hidden;
   color: var(--black); 
   font-family: sans-serif; 
-  background: linear-gradient(rgb(144, 144, 182),rgb(240, 195, 195));  
+  background: linear-gradient(rgb(221, 221, 238),rgb(239, 219, 219));  
   opacity: 1;
   transform: translateY(0);
 }
