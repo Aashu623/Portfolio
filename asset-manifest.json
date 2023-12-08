@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/Portfolio/static/css/main.e009ec64.css",
-    "main.js": "/Portfolio/static/js/main.9e128839.js",
+    "main.css": "/Portfolio/static/css/main.c5237ace.css",
+    "main.js": "/Portfolio/static/js/main.73acf156.js",
     "static/media/holidayz.png": "/Portfolio/static/media/holidayz.318fd9f359bcb042d123.png",
     "static/media/GoldsGym.png": "/Portfolio/static/media/GoldsGym.2aae4bc4f8d5e41fe9f2.png",
     "static/media/landingpage.png": "/Portfolio/static/media/landingpage.055523a9592bc1b12118.png",
+    "static/media/myPic.jpg": "/Portfolio/static/media/myPic.fa8bf694d4ce8d1242d8.jpg",
     "static/media/promanage.png": "/Portfolio/static/media/promanage.88ff907216f96548c05b.png",
-    "static/media/ResumeUpdated.pdf": "/Portfolio/static/media/ResumeUpdated.c0933ef8b716bbd4bbd8.pdf",
-    "static/media/boy.png": "/Portfolio/static/media/boy.bc8cd4a747216ce123ce.png",
+    "static/media/ResumeUpdated.pdf": "/Portfolio/static/media/ResumeUpdated.8825e5fbeca8b2349a9c.pdf",
     "static/media/calculator.png": "/Portfolio/static/media/calculator.0d0b71e15cadcd15eb16.png",
     "static/media/c.png": "/Portfolio/static/media/c.ca323b325816f40cf155.png",
     "static/media/nodejs.png": "/Portfolio/static/media/nodejs.03f2f7bb2230fde2e51d.png",
@@ -18,11 +18,11 @@
     "static/media/crown.png": "/Portfolio/static/media/crown.dbe416beae9b49b842ab.png",
     "static/media/css.png": "/Portfolio/static/media/css.4a6549b8c2b4cda8bb88.png",
     "index.html": "/Portfolio/index.html",
-    "main.e009ec64.css.map": "/Portfolio/static/css/main.e009ec64.css.map",
-    "main.9e128839.js.map": "/Portfolio/static/js/main.9e128839.js.map"
+    "main.c5237ace.css.map": "/Portfolio/static/css/main.c5237ace.css.map",
+    "main.73acf156.js.map": "/Portfolio/static/js/main.73acf156.js.map"
   },
   "entrypoints": [
-    "static/css/main.e009ec64.css",
-    "static/js/main.9e128839.js"
+    "static/css/main.c5237ace.css",
+    "static/js/main.73acf156.js"
   ]
 }
