@@ -19,6 +19,10 @@
   background: linear-gradient(rgb(221, 221, 238),rgb(239, 219, 219));  
   opacity: 1;
   transform: translateY(0);
+  height: fit-content;
+}
+*{
+  font-weight: 400;
 }
 .button{
   margin: 0px 10px;
