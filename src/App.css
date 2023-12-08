@@ -11,7 +11,6 @@
     --smboxShadow: -79px 51px 60px rgba(142, 34, 34, 0.08);
 }
 .App{
-  font-family: 'Times New Roman', Times, serif;
   padding: 0.5rem 3.5rem;
   overflow: hidden;
   color: var(--black); 
