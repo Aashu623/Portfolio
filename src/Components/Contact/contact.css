@@ -37,9 +37,10 @@
     flex-direction: column;
     gap: 1.1rem;
     align-items: center;
+    width: 80%;
 }
 .right form input,textarea{
-    width: 20rem;
+    width: 100%;
     height: 2.5rem;
     padding:  0 1.1em;
     text-align: center;
@@ -69,11 +70,6 @@
     margin-left: 35rem;
 }
 @media screen and (max-width:1080px) {
-    .contact{
-        .c-container{
-            align-items: flex-start;
-        }
-    }
     .span>:nth-child(1){
         font-size: 2.5rem;
     }
@@ -89,8 +85,10 @@
         .left,.right{
             width: 100%;
         }
-        .right>form{
-            width: 100%;
+        .right{
+            form{
+                width: 100%;
+            }
         }
     }
 
@@ -114,7 +112,7 @@
         font-size: 2rem;
     }
     .right form input,textarea{
-        width: 10rem;
+        width: 100%;
     }
     .error{
         text-align: center;
