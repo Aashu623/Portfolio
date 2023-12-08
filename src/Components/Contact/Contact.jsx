@@ -28,6 +28,7 @@ function Contact() {
             [name]:value,
         }));
     };
+    
     const validatePhoneNumber = ((input_str) =>{
         var re = /^\(?(\d{3})\)?[- ]?(\d{3})[- ]?(\d{4})$/;
       
