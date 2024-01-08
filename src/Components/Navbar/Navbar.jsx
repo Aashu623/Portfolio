@@ -46,7 +46,7 @@ function Navbar({ colorChange }) {
     <header className={colorChange ? "navbar colorChange" : "navbar"}>
       <div className="name">
         <img className="img" src={logo} alt="" />
-        <span className="my-name">Aashish's Kushwah</span>
+        <span className="my-name">Aashish Kushwah</span>
       </div>
       <div className={navbar}>
         <ul className="list">
