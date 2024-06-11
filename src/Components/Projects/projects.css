@@ -1,15 +1,14 @@
 /* Styles for the overall container */
-:root
-{
-  --yellow: #F5C32C;
-    --orange : #feb837;
-    --black : #242D49;
-    --gray : #788097;
-    --blueCard : #DDF8FE;
-    --purple: rgb(238 210 255);
-    --boxShadow : 0px 19px 60px rgb(0 0 0 / 8%);
-    --orangeCard: rgba(252, 166, 31, 0.45);
-    --smboxShadow: -79px 51px 60px rgba(142, 34, 34, 0.08);
+:root {
+  --yellow: #f5c32c;
+  --orange: #feb837;
+  --black: #242d49;
+  --gray: #788097;
+  --blueCard: #ddf8fe;
+  --purple: rgb(238 210 255);
+  --boxShadow: 0px 19px 60px rgb(0 0 0 / 8%);
+  --orangeCard: rgba(252, 166, 31, 0.45);
+  --smboxShadow: -79px 51px 60px rgba(142, 34, 34, 0.08);
 }
 .projects {
   display: flex;
@@ -23,43 +22,43 @@
   font-weight: bold;
   margin-top: 10px;
 }
-.projects > :nth-child(2)>span{
+.projects > :nth-child(2) > span {
   margin-left: 1rem;
   color: var(--orange);
   font-size: 2rem;
   font-weight: bold;
   margin-top: 10px;
 }
-.inner{
+.inner {
   margin-top: 2rem;
   display: grid;
-  grid-template-columns: repeat(3,1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 2rem;
 }
-.content>a:hover{
+.content > a:hover {
   cursor: pointer;
 }
-.project{
+.project {
   position: relative;
   display: flex;
   align-items: center;
   flex-direction: column;
   justify-content: center;
   width: 90%;
-  filter: drop-shadow(-12px 15px 13px rgba(0,0,0,0.25));
+  filter: drop-shadow(-12px 15px 13px rgba(0, 0, 0, 0.25));
   overflow: hidden;
   border-radius: 19px;
 }
-.project img{
+.project img {
   width: 100%;
   height: 12rem;
 }
-.project .content{
+.project .content {
   position: absolute;
   bottom: -20rem;
   height: 100%;
   width: 100%;
-  background: linear-gradient(rgb(144, 144, 182),rgb(240, 195, 195));
+  background: linear-gradient(rgb(144, 144, 182), rgb(240, 195, 195));
   background: rgb(240, 200, 200);
   backdrop-filter: blur(15px);
   border-radius: 19px;
@@ -68,41 +67,42 @@
   align-items: center;
   justify-content: center;
 }
-.project .content h3{
+.project .content h3 {
   margin: 0;
   color: var(--orange);
   font-size: 1.5rem;
   font-weight: 600;
 }
-.project .content p{
+.project .content p {
+  font-size: 0.9rem;
   padding: 0 1rem;
   color: var(--black);
 }
-.project .content .p-icons{
+.project .content .p-icons {
   display: flex;
   justify-content: space-around;
   gap: 2rem;
 }
-.p-icons a{
-  color: #242D49;
+.p-icons a {
+  color: #242d49;
 }
-.project:hover .content{
+.project:hover .content {
   bottom: 0;
-  transition: .5s ease;
+  transition: 0.5s ease;
 }
 @media screen and (max-width: 768px) {
   .projects > :nth-child(2) {
     font-size: 1.5rem;
   }
-  .projects > :nth-child(2)>span{
+  .projects > :nth-child(2) > span {
     font-size: 1.5rem;
   }
-  .inner{
-    grid-template-columns: repeat(1,1fr);
+  .inner {
+    grid-template-columns: repeat(1, 1fr);
     width: 100%;
     margin-left: 1.5rem;
   }
-  .inner img{
+  .inner img {
     width: 100%;
   }
-} 
+}

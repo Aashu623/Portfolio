@@ -29,7 +29,7 @@ const Projects=()=> {
       title:`Promanage`,
       dis:`This is a project Management tool. Users can login and manage their projects according to their needs.`,
       img:promanage,
-      githubLink:`https://github.com/Aashu623/Promanage`,
+      githubLink:`https://github.com/Aashu623/ProManage`,
       liveLink:`https://aashu623.github.io/Promanage/`
     },
     {
