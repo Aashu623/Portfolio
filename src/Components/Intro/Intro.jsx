@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from "react";
 import "./intro.css";
 import { GitHub, Instagram, Linkedin } from "react-feather";
-import boy from "../../img/myPic.jpg";
+import boy from "../../images/myPic.jpg";
 import Aos from "aos";
 import "aos/dist/aos.css";
 import resume from "./Aashish_Kushwah_FullStack_Resume.pdf";

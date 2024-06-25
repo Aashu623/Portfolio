@@ -1,9 +1,9 @@
 import React from "react";
 import "./projects.css";
-import holidayz from "../../img/holidayz.png";
-import GoldsGym from "../../img/GoldsGym.png";
-import landingpage from "../../img/landingpage.png";
-import promanage from "../../img/promanage.png";
+import holidayz from "../../images/holidayz.png";
+import GoldsGym from "../../images/GoldsGym.png";
+import landingpage from "../../images/landingpage.png";
+import promanage from "../../images/promanage.png";
 import { FaCode, FaEye } from "react-icons/fa";
 
 const Projects = () => {

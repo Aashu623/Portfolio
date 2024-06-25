@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./About.css";
-import setup from "../../img/setup.jpeg";
+import setup from "../../images/setup.jpeg";
 
 function About() {
   const [isExpanded, setIsExpanded] = useState(false);
