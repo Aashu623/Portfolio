@@ -4,12 +4,21 @@ import holidayz from "../../images/holidayz.png";
 import GoldsGym from "../../images/GoldsGym.png";
 import landingpage from "../../images/landingpage.png";
 import promanage from "../../images/promanage.png";
+import ecommerce from "../../images/ecommerce.png";
 import { FaCode, FaEye } from "react-icons/fa";
 
 const Projects = () => {
   const Projects = [
     {
       id: 1,
+      title: `Ecommerce`,
+      dis: `This is a sample wesbite made by Me. Only with the purpose to learn MERN Stack.`,
+      img: ecommerce,
+      githubLink: `https://github.com/Aashu623/MERN`,
+      liveLink: `https://mernfrontend-tau.vercel.app/`,
+    },
+    {
+      id: 2,
       title: `Holidayz`,
       dis: `This is a full responsive home page for a travel agency.`,
       img: holidayz,
@@ -17,7 +26,7 @@ const Projects = () => {
       liveLink: `https://aashu623.github.io/Holidayz/`,
     },
     {
-      id: 2,
+      id: 3,
       title: `Promanage`,
       dis: `This is a project Management tool. Users can login and manage their projects according to their needs.`,
       img: promanage,
@@ -25,7 +34,7 @@ const Projects = () => {
       liveLink: `https://aashu623.github.io/ProManage/`,
     },
     {
-      id: 3,
+      id: 4,
       title: `Gold's Gym Clone`,
       dis: `The design is fully responsive, ensuring seamless browsing across all devices.`,
       img: GoldsGym,
@@ -33,7 +42,7 @@ const Projects = () => {
       liveLink: `https://aashu623.github.io/GoldGymClone/`,
     },
     {
-      id: 4,
+      id: 5,
       title: `FoodGPT`,
       dis: `A beautifull responsive home page for a Food ordering website.`,
       img: landingpage,
@@ -41,7 +50,7 @@ const Projects = () => {
       liveLink: `https://aashu623.github.io/OIBSIP-LANDING_PAGE/`,
     },
     {
-      id: 5,
+      id: 6,
       title: `FoodGPT`,
       dis: `A beautifull responsive home page for a Food ordering website.`,
       img: landingpage,
