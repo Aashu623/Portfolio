@@ -2,7 +2,11 @@
   margin: 0;
   padding: 0;
   color: #1e81d7;
+  &:hover {
+    color: white;
+  }
 }
+
 body {
   background-image: radial-gradient(#45469c 1px, transparent 1px);
   background-size: 60px 60px;
