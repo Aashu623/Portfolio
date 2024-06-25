@@ -1,60 +1,69 @@
-:root
-{
-  --yellow: #F5C32C;
-    --orange : #feb837;
-    --black : #242D49;
-    --gray : #788097;
-    --blueCard : #DDF8FE;
-    --purple: rgb(238 210 255);
-    --boxShadow : 0px 19px 60px rgb(0 0 0 / 8%);
-    --orangeCard: rgba(252, 166, 31, 0.45);
-    --smboxShadow: -79px 51px 60px rgba(142, 34, 34, 0.08);
+* {
+  margin: 0;
+  padding: 0;
+  color: #1e81d7;
 }
-.App{
-  padding: 0.5rem 3.5rem;
-  overflow: hidden;
-  color: var(--black); 
-  font-family: sans-serif; 
-  background: linear-gradient(rgb(221, 221, 238),rgb(239, 219, 219));  
-  opacity: 1;
-  transform: translateY(0);
-  height: fit-content;
+body {
+  background-image: radial-gradient(#45469c 1px, transparent 1px);
+  background-size: 60px 60px;
+  background-color: #0f2f3a;
 }
-*{
-  font-weight: 400;
+.component-heading {
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 2rem;
+  background: #ff0000;
+  background: radial-gradient(
+    circle farthest-corner at center center,
+    #05c1ff 0%,
+    #ff0000 25%,
+    #05c1ff 50%,
+    #ff0000 75%,
+    #05c1ff 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
-.button{
-  margin: 0px 10px;
+.button {
   width: fit-content;
-  height: fit-content;
   border-radius: 34px;
   border: none;
-  color: white;
   font-size: 16px;
-  padding: 11px 26px  11px 26px;
-  background: linear-gradient(180deg,#fdc50f 26.71%,#fb982f 99.36%);
-  box-shadow: 0px 20px 24px 3px rgba(251,161,40,0.42);
-  &:hover{
+  padding: 11px 26px;
+  background: rgb(131, 58, 180);
+  background: linear-gradient(
+    90deg,
+    rgba(131, 58, 180, 1) 0%,
+    rgba(253, 29, 29, 1) 50%,
+    rgba(252, 176, 69, 1) 100%
+  );
+  color: white;
+  &:hover {
     background: white;
+    color: #0f2f3a;
     cursor: pointer;
-    color: var(--orange);
-    border: 1px solid orange;
   }
 }
-.disable{
-  box-shadow: 0px 20px 24px 3px rgba(251,161,40,0.42);
+.disable {
+  box-shadow: 0px 20px 24px 3px rgba(251, 161, 40, 0.42);
   background: rgb(190, 128, 13);
 }
-.line{
-  background-color: var(--yellow);
-  width: 100%;
-  height: 2px;
-  margin-top: 2rem;
-  box-shadow: 0px 20px 24px 3px rgba(7, 5, 1, 0.42);
+
+.first-color {
+  background: #e7eaf6;
 }
 
-@media screen and (max-width: 480px) {
-  .App{
-    padding: 0.5rem 1rem;
-  }
+.second-color {
+  background: #a2a8d3;
+}
+
+.third-color {
+  background: #38598b;
+}
+
+.fourth-color {
+  background: #113f67;
+}
+.skill-icon {
+  font-size: 4rem;
 }

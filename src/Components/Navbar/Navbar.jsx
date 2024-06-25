@@ -1,36 +1,10 @@
 import React, { useState } from "react";
 import "./navbar.css";
-import { useScrollingContext } from "../ScrollingContext";
-import logo from "../../img/crown.png";
-import { Menu, X } from "react-feather";
+import { TiThMenu } from "react-icons/ti";
+import { ImCross } from "react-icons/im";
+import { FaArrowAltCircleUp } from "react-icons/fa";
 
-function Navbar({ colorChange }) {
-  const { introRef, projectsRef, techRef, contactRef } = useScrollingContext();
-
-  const scrollToIntro = () => {
-    handleCrossClick();
-    if (introRef.current) {
-      introRef.current.scrollIntoView({ behavior: "smooth" });
-    }
-  };
-  const scrollToProjects = () => {
-    handleCrossClick();
-    if (projectsRef.current) {
-      projectsRef.current.scrollIntoView({ behavior: "smooth" });
-    }
-  };
-  const scrollToTech = () => {
-    handleCrossClick();
-    if (techRef.current) {
-      techRef.current.scrollIntoView({ behavior: "smooth" });
-    }
-  };
-  const scrollToContact = () => {
-    handleCrossClick();
-    if (contactRef.current) {
-      contactRef.current.scrollIntoView({ behavior: "smooth" });
-    }
-  };
+function Navbar() {
   const [navbar, setNavbar] = useState("nav-list");
   const [isShow, setIsShow] = useState(false);
   const handleMenuClick = () => {
@@ -43,35 +17,46 @@ function Navbar({ colorChange }) {
   };
 
   return (
-    <header className={colorChange ? "navbar colorChange" : "navbar"}>
-      <div className="name">
-        <img className="img" src={logo} alt="" />
-        <span className="my-name">Aashish Kushwah</span>
-      </div>
-      <div className={navbar}>
-        <ul className="list">
-          <li className="list-item" onClick={scrollToIntro}>
-            Home
-          </li>
-          <li className="list-item" onClick={scrollToIntro}>
+    <header
+      className="d-flex align-items-center justify-content-between py-2 gap-2"
+      id="navbar"
+    >
+      <a className="arrow" href="#navbar">
+        <FaArrowAltCircleUp />
+      </a>
+      <span className="my-name">Aashish Kushwah</span>
+      <ul className={navbar}>
+        <li className="list-item">
+          <a href="#about" onClick={handleCrossClick}>
             About
-          </li>
-          <li className="list-item" onClick={scrollToTech}>
+          </a>
+        </li>
+        <li className="list-item">
+          <a href="#skills" onClick={handleCrossClick}>
             Skills
-          </li>
-          <li className="list-item" onClick={scrollToProjects}>
+          </a>
+        </li>
+        <li className="list-item">
+          <a href="#education" onClick={handleCrossClick}>
+            Education
+          </a>
+        </li>
+        <li className="list-item">
+          <a href="#projects" onClick={handleCrossClick}>
             Projects
-          </li>
-          <button className="button" onClick={scrollToContact}>
+          </a>
+        </li>
+        <li className="list-item">
+          <a href="#contact" onClick={handleCrossClick}>
             Contact Me
-          </button>
-        </ul>
-      </div>
+          </a>
+        </li>
+      </ul>
       <div className="menu">
         {isShow ? (
-          <X onClick={handleCrossClick} />
+          <ImCross onClick={handleCrossClick} />
         ) : (
-          <Menu className="menu" onClick={handleMenuClick} />
+          <TiThMenu className="menu" onClick={handleMenuClick} />
         )}
       </div>
     </header>

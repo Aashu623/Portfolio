@@ -1,216 +1,132 @@
-.i-container{
-    position: relative;
-    padding-top: 3rem;
-    .intro{
-        display: flex;
-        height: fit-content;
-        justify-content: space-between;
-        padding: 2rem 1rem;
-        .i-left{
-            display: flex;
-            width: 50%;
-            position: relative;
-            height: fit-content;
-            gap: 2rem;
-            flex-direction: column;
-            .i-name{
-                display: flex;
-                flex-direction: column;
-                gap: 2rem;
-                .heading-div{
-                    display: flex;
-                    flex-direction: column;
-                    .heading{
-                        color: var(--black);
-                        font-weight: bold;
-                        font-size: 3rem;
-                    }
-                    .dynamic-text{
-                        .text{
-                            color: var(--orange);
-                            font-weight: bold;
-                            font-size: 4rem;
-                        }
-                    }
-                }
-                .about-div{
-                    .about{
-                        font-weight: bold;
-                        font-size: 1.1rem;
-                        color: var(--black);
-                        margin-top: 10px;
-                    }
-                }
-            }
-            .button{
-                text-decoration: none;
-            }
-            .i-icons{
-                margin-left: 2rem;
-                display: flex;
-                gap: 4rem;
-                .icon{
-                    transform: scale(2);
-                }
-            }
-        }
-        .i-right{
-            width: 50%;
-            position: relative;
-            display: flex;
-            justify-content: center;
-            align-items: center;  
-            .img{
-                width: 20rem;
-                height: auto;
-                border-radius: 50px;
-           }
-        } 
-    }
+.i-container .intro .i-left {
+  display: flex;
+  flex: 0.6;
+  flex-direction: column;
+  gap: 2rem;
 }
-.i-icons:hover{
-    cursor: pointer;
+.i-left .heading {
+  font-size: 3.5rem;
+  margin: 0;
+}
+.i-left .text {
+  font-size: 4rem;
+  font-weight: 600;
+  background: #ff0000;
+  background: radial-gradient(
+    circle farthest-corner at center center,
+    #ff0000 0%,
+    #05c1ff 50%,
+    #ff0000 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.i-left .about {
+  font-size: 1.2rem;
+  font-weight: 100;
+}
+.i-container .intro .i-right {
+  flex: 0.4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
 }
 
-@keyframes move {
-    0%,100%{
-        transform: translateX(0) translateY(0);
-    }
-    25%{
-        transform: translateX(-150px) translateY(0);
-    }
-    50%{
-        transform: translateX(-150px) translateY(-150px);
-    }
-    75%{
-        transform: translateX(0) translateY(-150px);
-    }
+.i-container .intro .i-left .i-icons {
+  display: flex;
+  gap: 4rem;
 }
 
-@media screen and (max-width:1280px) {
-    .i-container{
-        .intro{
-            .i-left{
-                flex: 1;
-                gap: 1.5rem;
-                .i-name{
-                    .heading-div{
-                        .dynamic-text{
-                            .text{
-                                font-size: 2.5rem;
-                            }
-                        }
-                    }
-                }
-            }
-            .i-right{    
-                flex: 1;
-                .img{
-                    width: 16rem;
-                }
-            } 
-        }
-    }
+.i-container .intro .i-icons .icon {
+  transform: scale(2);
 }
-@media screen and (max-width:990px) {
-    .i-container{
-        .intro{
-            i-left{
-                gap: 1.5rem;
-                .button{
-                    font-size: .7rem;
-                }
-            }
-        }
-    }
+
+.i-container .intro .i-icons:hover {
+  cursor: pointer;
 }
-@media screen and (max-width:780px) {
-    .i-container{
-        .intro{
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            .i-left{
-                width: 100%;
-                gap: 2rem;
-                .i-name{
-                    gap: 1rem;
-                    .heading-div{
-                        .heading{
-                            font-size: 2rem;
-                        }
-                    }
-                }
-            }
-            .i-right{
-                width: 100%;
-            }
-        }
-    }
+
+.i-container .intro .i-left .button {
+  text-decoration: none;
 }
+
+.i-container .intro .i-right img {
+  width: 28vw;
+  height: auto;
+  border-radius: 50%;
+  box-shadow: 0 0 50px 1px rgb(100, 100, 100);
+}
+
+@media screen and (max-width: 1280px) {
+  .i-container .intro .i-left {
+    flex: 1;
+    gap: 1.5rem;
+  }
+  .i-container .intro .i-left .i-name .dynamic-text .text {
+    font-size: 2.5rem;
+  }
+  .i-container .intro .i-right .img {
+    width: 16rem;
+  }
+}
+
+@media screen and (max-width: 990px) {
+  .i-container .intro .i-left .button {
+    font-size: 0.7rem;
+  }
+}
+
+@media screen and (max-width: 780px) {
+  .i-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .i-container .intro .i-left {
+    width: 100%;
+    gap: 2rem;
+  }
+  .i-container .intro .i-left .i-name .heading {
+    font-size: 2rem;
+  }
+  .i-container .intro .i-right {
+    width: 100%;
+  }
+}
+
 @media screen and (max-width: 480px) {
-    .i-container{
-        .intro{
-            gap: 1rem;
-            .i-left{
-                width: 100%;
-                height: auto;
-                flex-direction: column;
-                gap: 2rem;
-                .i-left{
-                    .i-name{
-                        .heading-div{
-                            .heading{
-                                font-size: 2.5rem;
-                            }
-                            .dynamic-text{
-                                .text{
-                                    font-size: 2.5rem;
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-        }
-    }
+  .i-container .intro {
+    gap: 1rem;
+  }
+  .i-container .intro .i-left {
+    width: 100%;
+    gap: 2rem;
+  }
+  .i-container .intro .i-left .i-name .heading,
+  .i-container .intro .i-left .i-name .dynamic-text .text {
+    font-size: 2.5rem;
+  }
 }
+
 @media screen and (max-width: 360px) {
-    .i-container{
-        padding-bottom: .5rem;
-        .intro{
-            padding: 2rem .5rem;
-            .i-left{
-                .i-name{
-                    .heading-div{
-                        .heading{
-                            font-size: 2rem;
-                        }
-                        .dynamic-text{
-                            .text{
-                                font-size: 1.8rem;
-                            }
-                        }
-                    }
-                }
-                .button{
-                    font-size: 1rem;
-                }
-                .i-icons{
-                    margin-left: 0;
-                    display: flex;
-                    justify-content: space-evenly;
-                    gap: 2rem;
-                    .icon{
-                        transform: scale(2);
-                    }
-                }
-            }
-        }
-        .i-right{
-            .img{
-                width: 8rem;
-            }
-        }
-    }
+  .i-container {
+    margin-top: 4rem;
+    padding: 2rem 0.5rem;
+  }
+  .i-container .intro .i-left .i-name .heading {
+    font-size: 2rem;
+  }
+  .i-container .intro .i-left .i-name .dynamic-text .text {
+    font-size: 1.8rem;
+  }
+  .i-container .intro .i-left .button {
+    font-size: 1rem;
+  }
+  .i-container .intro .i-left .i-icons {
+    margin-left: 0;
+    justify-content: space-evenly;
+    gap: 2rem;
+  }
+  .i-container .intro .i-right .img {
+    width: 8rem;
+  }
 }

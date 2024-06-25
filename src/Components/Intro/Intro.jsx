@@ -1,11 +1,10 @@
-import React, { useContext, useEffect, useRef } from "react";
+import React, { useEffect, useRef } from "react";
 import "./intro.css";
 import { GitHub, Instagram, Linkedin } from "react-feather";
 import boy from "../../img/myPic.jpg";
-import ScrollingContext from "../ScrollingContext";
 import Aos from "aos";
 import "aos/dist/aos.css";
-import resume from "../Intro/resumeMarch24.pdf";
+import resume from "./Aashish_Kushwah_FullStack_Resume.pdf";
 import Typed from "typed.js";
 const Intro = () => {
   const el = useRef(null);
@@ -13,24 +12,24 @@ const Intro = () => {
   useEffect(() => {
     const typed = new Typed(el.current, {
       strings: [
-        "Web developer",
+        "Web Developer",
         "Programmer",
-        "Web developer",
+        "Web Developer",
         "Programmer",
-        "Web developer",
+        "Web Developer",
         "Programmer",
-        "Web developer",
+        "Web Developer",
         "Programmer",
-        "Web developer",
+        "Web Developer",
         "Programmer",
-        "Web developer",
+        "Web Developer",
         "Programmer",
-        "Web developer",
+        "Web Developer",
         "Programmer",
-        "Web developer",
+        "Web Developer",
         "Programmer",
       ],
-      typeSpeed: 50,
+      typeSpeed: 20,
     });
     return () => {
       typed.destroy();
@@ -41,26 +40,28 @@ const Intro = () => {
     Aos.init({ duration: 2000 });
   }, []);
 
-  const { introRef } = useContext(ScrollingContext);
-
   return (
-    <div ref={introRef} className="i-container">
-      <div className="line"></div>
-      <div className="intro">
-        <div className="i-left">
+    <div
+      id="intro"
+      className="i-container container d-flex justify-content-between "
+    >
+      <div className="intro container d-flex align-item-center flex-wrap py-4">
+        <div className="i-left ">
           <div className="i-name">
             <div className="heading-div">
-              <span className="heading" data-aos="fade-right">
-                Hi! I am
-              </span>
-              <div className="dynamic-text">
+              <h1 className="heading z-index-0" data-aos="fade-right">
+                Hi ! I am
+              </h1>
+              <div className="dynamic-text w-100">
                 <span className="text" ref={el}></span>
               </div>
             </div>
             <div className="about-div">
               <span className="about" data-aos="fade-up">
-                MERN Stack Developer with high level of skill in web designing
-                and development, producting the Quality work.
+                I'm a recent graduate from LNCT University with a Master's
+                degree in Computer Applications. I am passionate about software
+                development and have honed my skills in both front-end and
+                back-end technologies.
               </span>
             </div>
           </div>
@@ -73,26 +74,31 @@ const Intro = () => {
               href="https://github.com/Aashu623"
               target="blank"
             >
-              <GitHub color="orange" />
+              <GitHub />
             </a>
             <a
               className="icon"
               href="https://www.linkedin.com/in/aashish-kushwah-78367424b/"
               target="blank"
             >
-              <Linkedin color="orange" />
+              <Linkedin />
             </a>
             <a
               className="icon"
               href="https://www.instagram.com/heart_hacker_ashu623/"
               target="blank"
             >
-              <Instagram color="orange" />
+              <Instagram />
             </a>
           </div>
         </div>
         <div className="i-right">
-          <img data-aos="fade-left" src={boy} alt="" className="img" />
+          <img
+            data-aos="fade-up"
+            src={boy}
+            alt=""
+            style={{ minWidth: "300px" }}
+          />
         </div>
       </div>
     </div>
