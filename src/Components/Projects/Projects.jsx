@@ -5,6 +5,9 @@ import GoldsGym from "../../images/GoldsGym.png";
 import landingpage from "../../images/landingpage.png";
 import promanage from "../../images/promanage.png";
 import ecommerce from "../../images/ecommerce.png";
+import askher from "../../images/askher.png";
+import dreamfitness from "../../images/dreamfitness.png";
+import quizapp from "../../images/quizapp.png";
 import { FaCode, FaEye } from "react-icons/fa";
 
 const Projects = () => {
@@ -19,6 +22,23 @@ const Projects = () => {
     },
     {
       id: 2,
+      title: `Code Fusion`,
+      dis: `Code Fusion is created using MERN stack for online quiz competion.`,
+      img: quizapp,
+      githubLink: `https://github.com/Aashu623/Quiz-app`,
+      liveLink: `https://codefusion-silk.vercel.app/`,
+    },
+    {
+      id: 3,
+      title: `Dream Fitness`,
+      dis: `A beautiful responsive home page for a local Gym.`,
+      img: dreamfitness,
+      githubLink: `https://github.com/Aashu623/dream-fitness`,
+      liveLink: `https://aashu623.github.io/dream-fitness/`,
+    },
+
+    {
+      id: 4,
       title: `Holidayz`,
       dis: `This is a full responsive home page for a travel agency.`,
       img: holidayz,
@@ -26,7 +46,7 @@ const Projects = () => {
       liveLink: `https://aashu623.github.io/Holidayz/`,
     },
     {
-      id: 3,
+      id: 5,
       title: `Promanage`,
       dis: `This is a project Management tool. Users can login and manage their projects according to their needs.`,
       img: promanage,
@@ -34,7 +54,7 @@ const Projects = () => {
       liveLink: `https://aashu623.github.io/ProManage/`,
     },
     {
-      id: 4,
+      id: 6,
       title: `Gold's Gym Clone`,
       dis: `The design is fully responsive, ensuring seamless browsing across all devices.`,
       img: GoldsGym,
@@ -42,15 +62,15 @@ const Projects = () => {
       liveLink: `https://aashu623.github.io/GoldGymClone/`,
     },
     {
-      id: 5,
-      title: `FoodGPT`,
-      dis: `A beautifull responsive home page for a Food ordering website.`,
-      img: landingpage,
-      githubLink: `https://github.com/Aashu623/OIBSIP-LANDING_PAGE/`,
-      liveLink: `https://aashu623.github.io/OIBSIP-LANDING_PAGE/`,
+      id: 7,
+      title: `Ask Her Out`,
+      dis: `A beautiful way to Ask your crush out.`,
+      img: askher,
+      githubLink: `https://github.com/Aashu623/Ask-Her-Out-main`,
+      liveLink: `https://aashu623.github.io/Ask-Her-Out-main/`,
     },
     {
-      id: 6,
+      id: 8,
       title: `FoodGPT`,
       dis: `A beautifull responsive home page for a Food ordering website.`,
       img: landingpage,
