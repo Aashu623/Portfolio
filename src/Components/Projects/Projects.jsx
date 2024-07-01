@@ -69,14 +69,6 @@ const Projects = () => {
       githubLink: `https://github.com/Aashu623/Ask-Her-Out-main`,
       liveLink: `https://aashu623.github.io/Ask-Her-Out-main/`,
     },
-    {
-      id: 8,
-      title: `FoodGPT`,
-      dis: `A beautifull responsive home page for a Food ordering website.`,
-      img: landingpage,
-      githubLink: `https://github.com/Aashu623/OIBSIP-LANDING_PAGE/`,
-      liveLink: `https://aashu623.github.io/OIBSIP-LANDING_PAGE/`,
-    },
   ];
   return (
     <div className="container" id="projects">
