@@ -4,7 +4,7 @@ import { GitHub, Instagram, Linkedin } from "react-feather";
 import boy from "../../images/myPic.jpg";
 import Aos from "aos";
 import "aos/dist/aos.css";
-import resume from "./Aashish_Kushwah_FullStack_Resume.pdf";
+import resume from "./Aashish_Kushwah_mern_fresher.pdf";
 import Typed from "typed.js";
 const Intro = () => {
   const el = useRef(null);

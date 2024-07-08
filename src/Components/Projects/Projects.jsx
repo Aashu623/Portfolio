@@ -2,7 +2,6 @@ import React from "react";
 import "./projects.css";
 import holidayz from "../../images/holidayz.png";
 import GoldsGym from "../../images/GoldsGym.png";
-import landingpage from "../../images/landingpage.png";
 import promanage from "../../images/promanage.png";
 import ecommerce from "../../images/ecommerce.png";
 import askher from "../../images/askher.png";
