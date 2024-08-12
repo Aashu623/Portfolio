@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Portfolio/static/css/main.a7e446c7.css",
-    "main.js": "/Portfolio/static/js/main.5a06fd5a.js",
+    "main.css": "/Portfolio/static/css/main.8a517ef9.css",
+    "main.js": "/Portfolio/static/js/main.e14f7aa4.js",
     "static/media/ecommerce.png": "/Portfolio/static/media/ecommerce.0c734b864888c1611cf1.png",
     "static/media/quizapp.png": "/Portfolio/static/media/quizapp.1263623e8eb84dd4b219.png",
     "static/media/dreamfitness.png": "/Portfolio/static/media/dreamfitness.88c704bd9e0537de867d.png",
@@ -13,11 +13,11 @@
     "static/media/Aashish_Kushwah_mern_fresher.pdf": "/Portfolio/static/media/Aashish_Kushwah_mern_fresher.73eb5174c2fcd5648028.pdf",
     "static/media/myPic.jpg": "/Portfolio/static/media/myPic.a864442ba3d8a58fbed8.jpg",
     "index.html": "/Portfolio/index.html",
-    "main.a7e446c7.css.map": "/Portfolio/static/css/main.a7e446c7.css.map",
-    "main.5a06fd5a.js.map": "/Portfolio/static/js/main.5a06fd5a.js.map"
+    "main.8a517ef9.css.map": "/Portfolio/static/css/main.8a517ef9.css.map",
+    "main.e14f7aa4.js.map": "/Portfolio/static/js/main.e14f7aa4.js.map"
   },
   "entrypoints": [
-    "static/css/main.a7e446c7.css",
-    "static/js/main.5a06fd5a.js"
+    "static/css/main.8a517ef9.css",
+    "static/js/main.e14f7aa4.js"
   ]
 }
