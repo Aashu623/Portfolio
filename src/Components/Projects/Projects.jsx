@@ -70,9 +70,9 @@ const Projects = () => {
     },
   ];
   return (
-    <div className="container" id="projects">
+    <div className="container mt-5"  id="projects">
       <h1 className="component-heading">Recent Projects</h1>
-      <div className="p-container d-flex flex-wrap w-100 gap-4">
+      <div className="p-container d-flex flex-wrap w-100 gap-4 justify-content-center align-center">
         {Projects.map((props) => {
           return (
             <div
@@ -85,10 +85,14 @@ const Projects = () => {
                 <img src={props.img} alt="" className="w-100" />
               </div>
               <div className="d-flex flex-column gap-1 mt-2">
-                <h5 className="fw-bold fst-italic ">{props.title}</h5>
-                <p className="discription">{props.dis}</p>
+                <h5 className="fw-bold fst-italic text-dark">{props.title}</h5>
+                <p className="discription text-dark">{props.dis}</p>
                 <div className="p-icons d-flex justify-content-around">
-                  <a href={props.githubLink} target="blank">
+                  <a
+                    href={props.githubLink}
+                    target="blank"
+                    className="text-dark"
+                  >
                     <FaCode />
                   </a>
                   <a href={props.liveLink} target="blank">

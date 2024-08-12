@@ -53,7 +53,11 @@ function Skills() {
         <div className="skills d-flex flex-wrap gap-5 w-100 justify-content-center ">
           {skills.map((skill) => {
             return (
-              <div className="border rounded skill" data-aos="zoom-in">
+              <div
+                className="border rounded skill"
+                data-aos="zoom-in"
+                key={skill.name}
+              >
                 <Tooltip title={skill.name} placement="top">
                   <div className="p-3 rounded ">
                     {" "}

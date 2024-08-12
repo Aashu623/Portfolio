@@ -9,7 +9,7 @@ import Navbar from './Components/Navbar/Navbar';
 import Aos from 'aos';
 import 'aos/dist/aos.css';
 import About from './Components/About/About';
-import Education from './Components/Education/Education';
+// import Education from './Components/Education/Education';
 import Skills from './Components/Skills/Skills';
 const App = () => {
 
@@ -24,7 +24,7 @@ const App = () => {
       <Intro />
       <About />
       <Skills />
-      <Education />
+      {/*<Education />*/}
       {/* <TechUse /> */}
       <Projects />
       <Contact />
