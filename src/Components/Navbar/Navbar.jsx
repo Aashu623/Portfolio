@@ -5,15 +5,15 @@ import { ImCross } from "react-icons/im";
 import { FaArrowAltCircleUp } from "react-icons/fa";
 
 function Navbar() {
-  const [navbar, setNavbar] = useState("nav-list");
+  const [navbar, setNavbar] = useState("");
   const [isShow, setIsShow] = useState(false);
   const handleMenuClick = () => {
     setIsShow(true);
-    setNavbar("nav-list show");
+    setNavbar(" show");
   };
   const handleCrossClick = () => {
     setIsShow(false);
-    setNavbar("nav-list");
+    setNavbar("");
   };
 
   return (
@@ -21,11 +21,11 @@ function Navbar() {
       className="d-flex align-items-center justify-content-between py-2 gap-2"
       id="navbar"
     >
-      <a className="arrow" href="#navbar">
+      <a className="arrow" href="#intro">
         <FaArrowAltCircleUp />
       </a>
       <span className="my-name">Aashish Kushwah</span>
-      <ul className={navbar}>
+      <ul className={`nav-list ${navbar}`}>
         <li className="list-item">
           <a href="#about" onClick={handleCrossClick}>
             About

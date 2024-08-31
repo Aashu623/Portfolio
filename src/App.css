@@ -66,3 +66,6 @@ body {
 .skill-icon {
   font-size: 4rem;
 }
+@media (screen & max-width:400px) {
+  
+}
