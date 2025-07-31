@@ -1,16 +1,11 @@
 import { useState } from "react";
 import { Download, X } from "lucide-react";
-import { Button } from "@/components/ui/button";
-import {
-  Dialog,
-  DialogContent,
-  DialogHeader,
-  DialogTitle,
-  DialogTrigger,
-} from "@/components/ui/dialog";
+
 
 // Import the resume PDF
 import resumePdf from "@/assets/CVAASHISHKUSHWAH.pdf";
+import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from "../ui/dialog";
+import { Button } from "../ui/button";
 
 interface ResumeModalProps {
   children: React.ReactNode;

@@ -1,6 +1,6 @@
 import { ArrowDown, Download, Github, Linkedin, Mail, Instagram, Eye } from "lucide-react";
-import { Button } from "@/components/ui/button";
 import heroImage from "@/assets/hero-bg-dark.jpg";
+import { Button } from "../ui/button";
 import ResumeModal from "./ResumeModal";
 
 const HeroSection = () => {
