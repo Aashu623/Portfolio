@@ -29,7 +29,7 @@ const HeroSection = () => {
               <span className="text-foreground">Aashish Kushwah</span>
             </h1>
             <p className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-2xl mx-auto leading-relaxed">
-              I'm a recent graduate from LNCT University with a Master's degree in Computer Applications. I am passionate about software development and have honed my skills in both front-end and back-end technologies.
+              I'm a passionate Full Stack Developer with a Master's degree in Computer Applications from LNCT University. Currently working as a Frontend Developer at Codescure Technology, I specialize in building scalable web applications using React.js, Next.js, and modern web technologies. I bring a unique blend of academic excellence and hands-on industry experience to every project.
             </p>
           </div>
 

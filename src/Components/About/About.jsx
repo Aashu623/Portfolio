@@ -22,29 +22,30 @@ function About() {
           </div>
           <div className="right">
             <p>
-              Hello! I'm a recent graduate from LNCT University with a Master's
-              degree in Computer Applications. I am passionate about software
-              development and have honed my skills in both front-end and
-              back-end technologies. My goal is to become a proficient Software
-              Developer or Full Stack Developer. I have a strong foundation in
-              programming languages such as C, C++, Python, and JavaScript, and
-              am adept at using web technologies including HTML, CSS, Bootstrap,
-              and Tailwind.{" "}
+              I am a Master's graduate in Computer Applications from LNCT University, 
+              specializing in full-stack software development with a passion for 
+              creating innovative digital solutions. My academic foundation, 
+              combined with hands-on project experience, has equipped me with 
+              comprehensive expertise across the software development lifecycle. 
+              I possess strong proficiency in core programming languages including 
+              C, C++, Python, and JavaScript, complemented by mastery of modern 
+              web technologies such as HTML5, CSS3, Bootstrap, and Tailwind CSS.{" "}
               {isExpanded && (
                 <>
-                  My expertise extends to modern JavaScript frameworks and
-                  libraries such as React, Redux, and Node.js, as well as
-                  back-end development with Express.js and databases like
-                  MongoDB and SQL. Throughout my academic journey, I have
-                  undertaken several projects that showcase my ability to
-                  develop functional and visually appealing applications.I am
-                  proficient in using development tools such as Git, GitHub, VS
-                  Code, and many others, which aid in version control and
-                  collaborative development. I am actively seeking a role where
-                  I can contribute my skills and grow as a Software Developer. I
-                  am eager to work on challenging projects and be part of a
-                  dynamic team where I can continue to learn and make a
-                  meaningful impact.
+                  My technical expertise encompasses contemporary JavaScript 
+                  frameworks and libraries including React.js, Redux, and Node.js, 
+                  alongside robust back-end development capabilities with Express.js 
+                  and database management systems including MongoDB and SQL. Throughout 
+                  my academic and project work, I have consistently demonstrated 
+                  the ability to architect, develop, and deploy scalable applications 
+                  that deliver exceptional user experiences while maintaining code 
+                  quality and performance standards. I am proficient in industry-standard 
+                  development tools and practices, including Git version control, 
+                  collaborative development workflows, and modern IDE environments. 
+                  Currently seeking opportunities to contribute my technical skills 
+                  and innovative mindset to forward-thinking organizations where I 
+                  can drive impactful solutions and continue my professional growth 
+                  as a Software Engineer.
                 </>
               )}
             </p>

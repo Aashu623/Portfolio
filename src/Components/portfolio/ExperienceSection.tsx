@@ -47,12 +47,19 @@ const TimelineItem = ({ item, index }: { item: typeof timeline[0], index: number
   const isWork = item.type === "work";
 
   return (
-    <div className={`relative flex items-center ${isLeft ? 'justify-start' : 'justify-end'} mb-12`}>
-      {/* Timeline Line */}
-      <div className="absolute left-1/2 transform -translate-x-1/2 w-px h-full bg-gradient-primary opacity-30" />
+    <div className="relative mb-12">
+      {/* Timeline Line - Hidden on mobile */}
+      <div className="absolute left-1/2 transform -translate-x-1/2 w-px h-full bg-gradient-primary opacity-30 hidden md:block" />
       
       {/* Timeline Node */}
       <div className={`absolute left-1/2 transform -translate-x-1/2 w-12 h-12 glass-card rounded-full flex items-center justify-center z-10 ${
+        isWork ? 'border-2 border-primary' : ''
+      } hidden md:flex`}>
+        <IconComponent className={`w-6 h-6 ${isWork ? 'text-primary' : 'text-primary'}`} />
+      </div>
+
+      {/* Mobile Icon - Visible only on mobile */}
+      <div className={`w-12 h-12 glass-card rounded-full flex items-center justify-center mx-auto mb-4 md:hidden ${
         isWork ? 'border-2 border-primary' : ''
       }`}>
         <IconComponent className={`w-6 h-6 ${isWork ? 'text-primary' : 'text-primary'}`} />
@@ -60,8 +67,8 @@ const TimelineItem = ({ item, index }: { item: typeof timeline[0], index: number
 
       {/* Content Card */}
       <div 
-        className={`glass-card p-6 max-w-lg scale-on-hover fade-in transition-all duration-300 ease-in-out ${
-          isLeft ? 'mr-auto pr-8' : 'ml-auto pl-8'
+        className={`glass-card p-4 md:p-6 w-full max-w-lg scale-on-hover fade-in transition-all duration-300 ease-in-out mx-auto md:mx-0 ${
+          isLeft ? 'md:mr-auto md:pr-8' : 'md:ml-auto md:pl-8'
         } ${isWork ? 'border-l-4 border-primary' : ''}`}
         style={{ animationDelay: `${index * 0.1}s` }}
       >
@@ -100,7 +107,7 @@ const ExperienceSection = () => {
           </div>
 
           {/* Timeline */}
-          <div className="relative">
+          <div className="relative px-4 md:px-0">
             {timeline.map((item, index) => (
               <TimelineItem key={index} item={item} index={index} />
             ))}
