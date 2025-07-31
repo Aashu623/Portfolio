@@ -26,45 +26,45 @@ const ContactSection = () => {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
             {/* Contact Information */}
-            <div className="flex flex-col justify-between">
-              <div className="glass-card p-8 fade-in scale-on-hover transition-all duration-300">
+            <div className="flex flex-col justify-between gap-8">
+              <div className="glass-card p-6 sm:p-8 fade-in scale-on-hover transition-all duration-300">
                 <h3 className="text-2xl font-semibold mb-6 gradient-text">
                   Get In Touch
                 </h3>
                 <div className="space-y-6">
-                  <div className="flex items-center space-x-4 group">
-                    <div className="glass-card p-3 rounded-lg group-hover:scale-110 transition-all duration-300">
+                  <div className="flex items-start space-x-4 group">
+                    <div className="glass-card p-3 rounded-lg group-hover:scale-110 transition-all duration-300 flex-shrink-0">
                       <Mail className="w-5 h-5 text-primary" />
                     </div>
-                    <div>
+                    <div className="min-w-0 flex-1">
                       <p className="font-medium">Email</p>
-                      <p className="text-muted-foreground">
+                      <p className="text-muted-foreground break-all sm:break-words text-sm sm:text-base">
                         aashukushwah53678@gmail.com
                       </p>
                     </div>
                   </div>
 
-                  <div className="flex items-center space-x-4 group">
-                    <div className="glass-card p-3 rounded-lg group-hover:scale-110 transition-all duration-300">
+                  <div className="flex items-start space-x-4 group">
+                    <div className="glass-card p-3 rounded-lg group-hover:scale-110 transition-all duration-300 flex-shrink-0">
                       <MapPin className="w-5 h-5 text-primary" />
                     </div>
-                    <div>
+                    <div className="min-w-0 flex-1">
                       <p className="font-medium">Location</p>
-                      <p className="text-muted-foreground">
+                      <p className="text-muted-foreground break-words text-sm sm:text-base">
                         Indore, Madhya Pradesh, India
                       </p>
                     </div>
                   </div>
 
-                  <div className="flex items-center space-x-4 group">
-                    <div className="glass-card p-3 rounded-lg group-hover:scale-110 transition-all duration-300">
+                  <div className="flex items-start space-x-4 group">
+                    <div className="glass-card p-3 rounded-lg group-hover:scale-110 transition-all duration-300 flex-shrink-0">
                       <Phone className="w-5 h-5 text-primary" />
                     </div>
-                    <div>
+                    <div className="min-w-0 flex-1">
                       <p className="font-medium">Phone</p>
-                      <p className="text-muted-foreground">+91 7000759525</p>
+                      <p className="text-muted-foreground break-words text-sm sm:text-base">+91 7000759525</p>
                     </div>
                   </div>
                 </div>
@@ -72,7 +72,7 @@ const ContactSection = () => {
 
               {/* Social Links */}
               <div
-                className="glass-card p-8 fade-in scale-on-hover transition-all duration-300"
+                className="glass-card p-6 sm:p-8 fade-in scale-on-hover transition-all duration-300"
                 style={{ animationDelay: "0.1s" }}
               >
                 <h3 className="text-xl font-semibold mb-6">Follow Me</h3>
@@ -107,7 +107,7 @@ const ContactSection = () => {
 
             {/* Contact Form */}
             <div
-              className="glass-card p-8 fade-in scale-on-hover transition-all duration-300"
+              className="glass-card p-6 sm:p-8 fade-in scale-on-hover transition-all duration-300"
               style={{ animationDelay: "0.2s" }}
             >
               <h3 className="text-2xl font-semibold mb-6 gradient-text">
