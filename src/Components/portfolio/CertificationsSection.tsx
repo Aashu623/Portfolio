@@ -5,50 +5,45 @@ const certifications = [
     name: "AWS Cloud Practitioner",
     issuer: "Amazon Web Services",
     date: "2023",
-    badge: "🏅"
+    badge: "🏅",
   },
   {
     name: "React Developer Certification",
     issuer: "Meta",
     date: "2023",
-    badge: "⚛️"
+    badge: "⚛️",
   },
-  {
-    name: "MongoDB Developer",
-    issuer: "MongoDB University",
-    date: "2023",
-    badge: "🍃"
-  },
+
   {
     name: "JavaScript Algorithms",
     issuer: "FreeCodeCamp",
     date: "2022",
-    badge: "📜"
+    badge: "📜",
   },
   {
     name: "Introduction to Frontend Development",
     issuer: "Coursera",
     date: "2023",
-    badge: "🌐"
+    badge: "🌐",
   },
   {
     name: "Learn C++",
     issuer: "CodeChef",
     date: "2023",
-    badge: "💻"
+    badge: "💻",
   },
   {
     name: "Basics of CPP",
     issuer: "Coding Ninjas",
     date: "2023",
-    badge: "⚡"
+    badge: "⚡",
   },
   {
     name: "SQL Basic",
     issuer: "HackerRank",
     date: "2023",
-    badge: "🗄️"
-  }
+    badge: "🗄️",
+  },
 ];
 
 const honors = [
@@ -57,15 +52,15 @@ const honors = [
     issuer: "LNCT Hackathon Club",
     date: "2023",
     badge: "🏆",
-    description: "Reached final round in national-level hackathon competition"
+    description: "Reached final round in national-level hackathon competition",
   },
   {
     name: "Quiz Competition Coordinator",
     issuer: "LNCT MCA Department",
     date: "2023",
     badge: "🎯",
-    description: "Successfully coordinated department-level quiz competition"
-  }
+    description: "Successfully coordinated department-level quiz competition",
+  },
 ];
 
 const CertificationsSection = () => {
@@ -79,10 +74,11 @@ const CertificationsSection = () => {
               <span className="gradient-text">Certifications & Awards</span>
             </h2>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-              Professional certifications and achievements that validate my expertise
+              Professional certifications and achievements that validate my
+              expertise
             </p>
           </div>
-          
+
           {/* Certifications Section */}
           <div className="mb-16">
             <h3 className="text-2xl font-semibold mb-8 text-center">
@@ -90,15 +86,19 @@ const CertificationsSection = () => {
             </h3>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
               {certifications.map((cert, index) => (
-                <div 
+                <div
                   key={cert.name}
                   className="glass-card p-6 text-center scale-on-hover fade-in transition-all duration-300"
                   style={{ animationDelay: `${index * 0.1}s` }}
                 >
                   <div className="text-4xl mb-4">{cert.badge}</div>
                   <h4 className="font-semibold mb-2 text-sm">{cert.name}</h4>
-                  <p className="text-sm text-muted-foreground mb-1">{cert.issuer}</p>
-                  <p className="text-xs text-primary font-medium">{cert.date}</p>
+                  <p className="text-sm text-muted-foreground mb-1">
+                    {cert.issuer}
+                  </p>
+                  <p className="text-xs text-primary font-medium">
+                    {cert.date}
+                  </p>
                 </div>
               ))}
             </div>
@@ -111,7 +111,7 @@ const CertificationsSection = () => {
             </h3>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               {honors.map((honor, index) => (
-                <div 
+                <div
                   key={honor.name}
                   className="glass-card p-6 scale-on-hover fade-in transition-all duration-300"
                   style={{ animationDelay: `${index * 0.1}s` }}
@@ -120,9 +120,15 @@ const CertificationsSection = () => {
                     <div className="text-4xl">{honor.badge}</div>
                     <div className="flex-1">
                       <h4 className="font-semibold mb-2">{honor.name}</h4>
-                      <p className="text-sm text-muted-foreground mb-1">{honor.issuer}</p>
-                      <p className="text-xs text-primary font-medium mb-2">{honor.date}</p>
-                      <p className="text-sm text-muted-foreground">{honor.description}</p>
+                      <p className="text-sm text-muted-foreground mb-1">
+                        {honor.issuer}
+                      </p>
+                      <p className="text-xs text-primary font-medium mb-2">
+                        {honor.date}
+                      </p>
+                      <p className="text-sm text-muted-foreground">
+                        {honor.description}
+                      </p>
                     </div>
                   </div>
                 </div>
@@ -135,4 +141,4 @@ const CertificationsSection = () => {
   );
 };
 
-export default CertificationsSection; 
+export default CertificationsSection;
