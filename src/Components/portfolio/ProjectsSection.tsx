@@ -2,7 +2,7 @@ import { ExternalLink, Github, Play } from "lucide-react";
 import { Button } from "../ui/button";
 
 // Import project images
-import ecommerce from "@/assets/projects/ecommerce.png";
+import brahmiacademy from "@/assets/projects/brahmiacademy.png";
 import quizapp from "@/assets/projects/quizapp.png";
 import dreamfitness from "@/assets/projects/dreamfitness.png";
 import holidayz from "@/assets/projects/holidayz.png";
@@ -16,7 +16,7 @@ const projects = [
     title: "Brahmi Academy",
     description:
       "Built a full-stack e-commerce platform with Next.js 15, React 19, TypeScript, and MongoDB, enabling book sales, user authentication, cart, and order management.",
-    image: ecommerce,
+    image: brahmiacademy,
     tech: [
       "Next.js",
       "Tailwind CSS",
@@ -29,7 +29,7 @@ const projects = [
     live: "https://brahmiacademy.com/",
     featured: true,
   },
-  
+
   {
     id: 2,
     title: "Code Fusion",
