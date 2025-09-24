@@ -13,23 +13,33 @@ import askher from "@/assets/projects/askher.png";
 const projects = [
   {
     id: 1,
-    title: "Ecommerce",
-    description: "This is a sample website made by Me. Only with the purpose to learn MERN Stack.",
+    title: "Brahmi Academy",
+    description:
+      "Built a full-stack e-commerce platform with Next.js 15, React 19, TypeScript, and MongoDB, enabling book sales, user authentication, cart, and order management.",
     image: ecommerce,
-    tech: ["React", "Node.js", "MongoDB", "Express", "MERN Stack"],
-    github: "https://github.com/Aashu623/MERN",
-    live: "https://mernfrontend-tau.vercel.app/",
-    featured: true
+    tech: [
+      "Next.js",
+      "Tailwind CSS",
+      "React",
+      "TypeScript",
+      "RTK Query",
+      "Radix UI",
+      "MongoDB",
+    ],
+    live: "https://brahmiacademy.com/",
+    featured: true,
   },
+  
   {
     id: 2,
     title: "Code Fusion",
-    description: "Code Fusion is created using MERN stack for online quiz competition.",
+    description:
+      "Code Fusion is created using MERN stack for online quiz competition.",
     image: quizapp,
     tech: ["React", "Node.js", "MongoDB", "Express", "Quiz App"],
     github: "https://github.com/Aashu623/Quiz-app",
     live: "https://codefusion-silk.vercel.app/",
-    featured: true
+    featured: true,
   },
   {
     id: 3,
@@ -39,7 +49,7 @@ const projects = [
     tech: ["HTML", "CSS", "JavaScript", "Responsive Design"],
     github: "https://github.com/Aashu623/dream-fitness",
     live: "https://aashu623.github.io/dream-fitness/",
-    featured: false
+    featured: false,
   },
   {
     id: 4,
@@ -49,27 +59,29 @@ const projects = [
     tech: ["HTML", "CSS", "JavaScript", "Travel Website"],
     github: "https://github.com/Aashu623/Holidayz",
     live: "https://aashu623.github.io/Holidayz/",
-    featured: false
+    featured: false,
   },
   {
     id: 5,
     title: "Promanage",
-    description: "This is a project Management tool. Users can login and manage their projects according to their needs.",
+    description:
+      "This is a project Management tool. Users can login and manage their projects according to their needs.",
     image: promanage,
     tech: ["HTML", "CSS", "JavaScript", "Project Management"],
     github: "https://github.com/Aashu623/ProManage",
     live: "https://aashu623.github.io/ProManage/",
-    featured: false
+    featured: false,
   },
   {
     id: 6,
     title: "Gold's Gym Clone",
-    description: "The design is fully responsive, ensuring seamless browsing across all devices.",
+    description:
+      "The design is fully responsive, ensuring seamless browsing across all devices.",
     image: GoldsGym,
     tech: ["HTML", "CSS", "JavaScript", "Gym Website"],
     github: "https://github.com/Aashu623/GoldGymClone",
     live: "https://aashu623.github.io/GoldGymClone/",
-    featured: false
+    featured: false,
   },
   {
     id: 7,
@@ -79,20 +91,26 @@ const projects = [
     tech: ["HTML", "CSS", "JavaScript", "Fun Project"],
     github: "https://github.com/Aashu623/Ask-Her-Out-main",
     live: "https://aashu623.github.io/Ask-Her-Out-main/",
-    featured: false
-  }
+    featured: false,
+  },
 ];
 
-const ProjectCard = ({ project, index }: { project: typeof projects[0], index: number }) => {
+const ProjectCard = ({
+  project,
+  index,
+}: {
+  project: (typeof projects)[0];
+  index: number;
+}) => {
   return (
-    <div 
+    <div
       className="glass-card overflow-hidden scale-on-hover fade-in h-full flex flex-col"
       style={{ animationDelay: `${index * 0.1}s` }}
     >
       {/* Project Image */}
       <div className="relative overflow-hidden group">
-        <img 
-          src={project.image} 
+        <img
+          src={project.image}
           alt={project.title}
           className="w-full aspect-[16/10] object-cover transition-transform duration-300 group-hover:scale-105"
         />
@@ -126,7 +144,7 @@ const ProjectCard = ({ project, index }: { project: typeof projects[0], index: n
             </span>
           )}
         </div>
-        
+
         <p className="text-muted-foreground mb-4 leading-relaxed flex-1">
           {project.description}
         </p>
@@ -134,7 +152,7 @@ const ProjectCard = ({ project, index }: { project: typeof projects[0], index: n
         {/* Tech Stack */}
         <div className="flex flex-wrap gap-2 mb-4">
           {project.tech.map((tech) => (
-            <span 
+            <span
               key={tech}
               className="glass-card px-3 py-1 text-sm font-medium"
             >
@@ -145,13 +163,23 @@ const ProjectCard = ({ project, index }: { project: typeof projects[0], index: n
 
         {/* Project Links */}
         <div className="flex space-x-3 mt-auto">
-          <a href={project.github} target="_blank" rel="noopener noreferrer" className="flex-1">
+          <a
+            href={project.github}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex-1"
+          >
             <Button variant="outline" size="sm" className="glass-button w-full">
               <Github className="w-4 h-4 mr-2" />
               GitHub
             </Button>
           </a>
-          <a href={project.live} target="_blank" rel="noopener noreferrer" className="flex-1">
+          <a
+            href={project.live}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex-1"
+          >
             <Button size="sm" className="glass-button w-full">
               <Play className="w-4 h-4 mr-2" />
               Live Demo
@@ -184,9 +212,15 @@ const ProjectsSection = () => {
               <span className="gradient-text">Featured Projects</span>
             </h3>
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-              {projects.filter(project => project.featured).map((project, index) => (
-                <ProjectCard key={project.id} project={project} index={index} />
-              ))}
+              {projects
+                .filter((project) => project.featured)
+                .map((project, index) => (
+                  <ProjectCard
+                    key={project.id}
+                    project={project}
+                    index={index}
+                  />
+                ))}
             </div>
           </div>
 
@@ -196,15 +230,25 @@ const ProjectsSection = () => {
               <span className="gradient-text">Other Projects</span>
             </h3>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
-              {projects.filter(project => !project.featured).map((project, index) => (
-                <ProjectCard key={project.id} project={project} index={index + 2} />
-              ))}
+              {projects
+                .filter((project) => !project.featured)
+                .map((project, index) => (
+                  <ProjectCard
+                    key={project.id}
+                    project={project}
+                    index={index + 2}
+                  />
+                ))}
             </div>
           </div>
 
           {/* View More */}
           <div className="text-center mt-12">
-            <a href="https://github.com/Aashu623" target="_blank" rel="noopener noreferrer">
+            <a
+              href="https://github.com/Aashu623"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <Button className="glass-button">
                 <Github className="w-4 h-4 mr-2" />
                 View All Projects on GitHub
