@@ -6,7 +6,6 @@ import {
   Github,
   Linkedin,
   Twitter,
-  Link,
 } from "lucide-react";
 import { Input } from "../ui/input";
 import { Textarea } from "../ui/textarea";
@@ -80,20 +79,22 @@ const ContactSection = () => {
               >
                 <h3 className="text-xl font-semibold mb-6">Follow Me</h3>
                 <div className="flex space-x-4">
-                  <Link
+                  <a
                     href="https://github.com/Aashu623"
                     target="_blank"
+                    rel="noopener noreferrer"
                     className="glass-card p-3 hover:scale-110 transition-all duration-300 group"
                   >
-                    <Github className="size-6 text-foreground group-hover:text-primary transition-colors duration-300" />
-                  </Link>
-                  <Link
+                    <Github className="w-6 h-6 text-foreground group-hover:text-primary transition-colors duration-300" />
+                  </a>
+                  <a
                     href="https://www.linkedin.com/in/aashish-kushwah-78367424b/"
                     target="_blank"
+                    rel="noopener noreferrer"
                     className="glass-card p-3 hover:scale-110 transition-all duration-300 group"
                   >
-                    <Linkedin className="size-6 text-foreground group-hover:text-primary transition-colors duration-300" />
-                  </Link>
+                    <Linkedin className="w-6 h-6 text-foreground group-hover:text-primary transition-colors duration-300" />
+                  </a>
                 </div>
               </div>
             </div>
